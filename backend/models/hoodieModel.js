@@ -17,14 +17,16 @@ const hoodieSchema = mongoose.Schema(
         },
         color: {
             type: String,
-            required: true,
             trim: true
         },
         size: {
             type: String,
             required: true,
             enum: ['S', 'M', 'L'],
-            required: true
+        },
+        description: {
+            type: String,
+            trim: true
         }
     }
 );
