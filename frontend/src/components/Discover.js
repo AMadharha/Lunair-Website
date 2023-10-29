@@ -1,11 +1,13 @@
 import React from 'react'
-import "./assets/css/Discover.module.css";
+import styles from "./assets/css/Discover.module.css";
 
 const Discover = () => {
   return (
-    <div className='container'>
+    <div className={styles.container}>
+      <div className={styles.discover}>
         <h1>Discover The Collection</h1>
-        <button>Shop All Hoodies</button>
+        <button>SHOP ALL HOODIES</button>
+      </div>
     </div>
   )
 }
