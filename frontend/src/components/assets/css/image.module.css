@@ -1,10 +1,9 @@
-.container{
- display: flex;
- justify-content: center;
+.container {
+    display: flex;
+    justify-content: center;
 }
 
-.display{
+.display {
     width: 100%;
-    height: auto;
 }
 
