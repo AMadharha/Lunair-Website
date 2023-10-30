@@ -1,6 +1,6 @@
 import React from "react"
 import "./assets/css/global.css"
-import styles from './assets/css/nav.module.css'
+import styles from './assets/css/Nav.module.css'
 import logo from "./assets/images/lunair-logo.svg"
 import userIcon from "./assets/images/user.png"
 import cartIcon from "./assets/images/shopping-cart.png"
