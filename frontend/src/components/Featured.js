@@ -14,9 +14,9 @@ const Featured = () => {
 
                 <img src={hoodie1} alt="Hoodie" className={styles.hoodie} />
                 <div className={styles.details}>
-                    <h2 className={styles.name}>HOODIE 1</h2>
-                    <p className={styles.price}>$60.00 CAD</p>
-                    <p className={styles.description}>
+                    <h2>HOODIE 1</h2>
+                    <p>$60.00 CAD</p>
+                    <p>
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis posuere odio id sem consequat ultrices. Aenean in mattis leo. Vestibulum placerat fermentum nunc at scelerisque. Vivamus et feugiat dolor. Morbi sagittis metus felis, vitae varius felis gravida quis. Nulla rutrum tincidunt ullamcorper. Nam eget mi mattis, commodo justo eu, posuere.
                     </p>
                 </div>
