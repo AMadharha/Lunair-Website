@@ -1,0 +1,29 @@
+.container{
+    background-color: #F1E0CD;
+    display: flex;
+    justify-content: center;
+}
+
+.container2{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-right: 200px;
+    align-content: center;
+}
+
+
+.imgMap{
+    width: 457px;
+    height: 444px;
+    margin-left: 200px;
+    margin-right: 150px;
+}
+
+.imgDelivery{
+    width: 75px;
+    height: 75px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+}
+

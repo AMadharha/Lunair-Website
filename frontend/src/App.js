@@ -4,6 +4,7 @@ import Image from './components/Image.js'
 import Discover from './components/Discover.js'
 import Featured from './components/Featured.js'
 import AboutUs from './components/AboutUs.js'
+import Shipping from './components/Shipping.js'
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
       <Discover />
       <Featured />
       <AboutUs />
+      <Shipping />
     </div>
   )
 }
