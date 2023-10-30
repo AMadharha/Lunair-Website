@@ -1,0 +1,38 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap');
+
+header {
+    width: 100%;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav {
+    width: 80%;
+    display: flex;
+}
+
+.logo {
+    width: 20%;
+    padding-right: 30px;
+}
+
+.links {
+    align-self: flex-end;
+    display: flex;
+    gap: 30px;
+}
+
+.icons {
+    margin-left: auto;
+    display: flex;
+    align-self: flex-end;
+    gap: 30px;
+}
+
+.userIcon, .cartIcon {
+    width: 30px;
+    height: 30px;
+}
