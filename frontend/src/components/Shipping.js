@@ -1,7 +1,7 @@
-import React from "react"
-import styles from "./assets/css/Shipping.module.css"
-import map from "./assets/images/canada-map.png"
-import delivery from "./assets/images/delivery.png"
+import React from 'react'
+import styles from './assets/css/Shipping.module.css'
+import map from './assets/images/canada-map.png'
+import delivery from './assets/images/delivery.png'
 
 const Shipping = () => {
     return (

@@ -1,9 +1,9 @@
 import React from 'react'
-import "./assets/css/global.css"
-import styles from "./assets/css/Featured.module.css"
-import arrowLeft from "./assets/images/arrow-left.png"
-import arrowRight from "./assets/images/arrow-right.png"
-import hoodie1 from "./assets/images/blue-hoodie-sample.png"
+import './assets/css/global.css'
+import styles from './assets/css/Featured.module.css'
+import arrowLeft from './assets/images/arrow-left.png'
+import arrowRight from './assets/images/arrow-right.png'
+import hoodie1 from './assets/images/blue-hoodie-sample.png'
 
 const Featured = () => {
     return (

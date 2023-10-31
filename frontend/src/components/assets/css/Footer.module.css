@@ -1,0 +1,46 @@
+.container {
+    width: 100%;
+    margin-top: 100px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;;
+    background-color: #262626;
+}
+
+.footerContent {
+    width: 80%;
+    display: flex;
+}
+
+.quickLinks {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.header {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 16px;
+    color: #E4E4E4;
+}
+
+.link {
+    font-size: 14px;
+    color: #E4E4E4;
+}
+
+.socialMedia {
+    display: flex;
+    margin-left: auto;
+    gap: 30px;
+}
+
+.socialIcon {
+    width: 48px;
+    height: 48px;
+}
+
