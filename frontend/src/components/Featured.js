@@ -6,52 +6,67 @@ import arrowRight from './assets/images/arrow-right.png';
 import hoodie1 from './assets/images/blue-hoodie-sample.png';
 
 const Featured = () => {
-    const [currentSlide, setCurrentSlide] = useState(0);
+    const [transitioning, setTransitioning] = useState(false);
+    const [direction, setDirection] = useState(null); 
+    const [currentHoodie, setCurrentHoodie] = useState(0);
 
-    const handleSlide = (direction) => {
-        if (direction === 'left') {
-            setCurrentSlide(currentSlide - 1 >= 0 ? currentSlide - 1 : 2); 
-        } else {
-            setCurrentSlide(currentSlide + 1 <= 2 ? currentSlide + 1 : 0); 
-        }
-    };
+    const hoodies = [
+        {
+            image: hoodie1,
+            name: "HOODIE 1",
+            price: "$60.00 CAD",
+            description: "Lorem ipsum dolor sit amet, consectetur"
+        },
+        {
+            image: hoodie1,
+            name: "HOODIE 2",
+            price: "$50.00 CAD",
+            description: "Lorem ipsum dolor sit amet, consectetur"
+        },
+        {
+            image: hoodie1,
+            name: "HOODIE 3",
+            price: "$40.00 CAD",
+            description: "Lorem ipsum dolor sit amet, consectetur"
+        },
+    ];
+
+    const nextHoodie = () => {
+        setDirection("right");
+        setTransitioning(true);
+        setTimeout(() => {
+            setCurrentHoodie((prevHoodie) => (prevHoodie + 1) % hoodies.length);
+            setTransitioning(false);
+        }, 300);
+    }
+    
+    const prevHoodie = () => {
+        setDirection("left");
+        setTransitioning(true);
+        setTimeout(() => {
+            setCurrentHoodie((prevHoodie) => (prevHoodie - 1 + hoodies.length) % hoodies.length);
+            setTransitioning(false);
+        }, 300);
+    }
 
     return (
         <div className={styles.container}>
             <h1 className={styles.header}>FEATURED</h1>
-            <div className={styles.contentContainer}>
-                <img
-                    src={arrowLeft}
-                    alt="Left Arrow"
-                    className={styles.arrow}
-                    onClick={() => handleSlide('left')}
-                />
+            <div className={styles.hoodieDisplay}>
+                <img src={arrowLeft} alt="Left Arrow" className={styles.arrow} onClick={prevHoodie} />
 
-                <img
-                    src={hoodie1}
-                    alt="Hoodie"
-                    className={styles.hoodie}
-                    style={{ transform: `translateX(${-currentSlide * 100}%)` }}
-                />
-                <div className={styles.details}>
-                    <h2>HOODIE {currentSlide + 1}</h2>
-                    <p>$60.00 CAD</p>
-                    <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis posuere
-                        odio id sem consequat ultrices. Aenean in mattis leo. Vestibulum placerat
-                        fermentum nunc at scelerisque. Vivamus et feugiat dolor. Morbi sagittis
-                        metus felis, vitae varius felis gravida quis. Nulla rutrum tincidunt
-                        ullamcorper. Nam eget mi mattis, commodo justo eu, posuere.
-                    </p>
+                <div className={`${styles.contentContainer} ${transitioning ? (direction === "left" ? styles.leaving : styles.entering) : ''}`}>
+                    <img src={hoodies[currentHoodie].image} alt="Hoodie" className={styles.hoodie} />
+                    <div className={styles.details}>
+                        <h2>{hoodies[currentHoodie].name}</h2>
+                        <p>{hoodies[currentHoodie].price}</p>
+                        <p>{hoodies[currentHoodie].description}</p>
+                    </div>
                 </div>
 
-                <img
-                    src={arrowRight}
-                    alt="Right Arrow"
-                    className={styles.arrow}
-                    onClick={() => handleSlide('right')}
-                />
+                <img src={arrowRight} alt="Right Arrow" className={styles.arrow} onClick={nextHoodie} />
             </div>
+            
         </div>
     );
 };

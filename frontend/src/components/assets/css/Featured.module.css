@@ -9,11 +9,28 @@
     background-color: #AEC2DC;
 }
 
+.hoodieDisplay {
+    display: flex;
+    justify-content: center;
+}
+
 .contentContainer {
     display: flex;
     justify-content: center;
     width: 80%;
     gap: 30px;
+    transition: opacity 0.3s, transform 0.3s;
+    opacity: 1;
+}
+
+.contentContainer.leaving {
+    opacity: 0;
+    transform: translateX(-10%); 
+}
+
+.contentContainer.entering {
+    opacity: 0;
+    transform: translateX(10%);
 }
 
 .arrow {
