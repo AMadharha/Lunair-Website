@@ -1,6 +1,6 @@
 import React from 'react'
 import './assets/css/global.css'
-import styles from './assets/css/image.module.css'
+import styles from './assets/css/Image.module.css'
 import logo from './assets/images/temp-display.png'
 
 
