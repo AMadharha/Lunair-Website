@@ -9,17 +9,41 @@
     background-color: #AEC2DC;
 }
 
+.hoodieDisplay {
+    width: 80%;
+    display: flex;
+    justify-content: center;
+}
+
 .contentContainer {
     display: flex;
     justify-content: center;
     width: 80%;
     gap: 30px;
+    transition: opacity 0.3s, transform 0.3s;
+    opacity: 1;
+}
+
+.contentContainer.leaving {
+    opacity: 0;
+    transform: translateX(-10%); 
+}
+
+.contentContainer.entering {
+    opacity: 0;
+    transform: translateX(10%);
 }
 
 .arrow {
     width: 74px;
     height: 74px;
     align-self: center;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.arrow:hover {
+    transform: scale(1.05);
 }
 
 .hoodie {
