@@ -23,6 +23,11 @@ nav {
     gap: 30px;
 }
 
+.links a:hover {
+    color: gray;
+    cursor: pointer;
+}
+
 .icons {
     margin-left: auto;
     display: flex;
@@ -33,4 +38,20 @@ nav {
 .userIcon, .cartIcon {
     width: 30px;
     height: 30px;
+}
+
+.iconContainer {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    width: 30px; /* Set the same width and height as the icons */
+    height: 30px;
+    padding: 10%;
+    transition: background-color 0.3s; /* Add a smooth transition */
+}
+
+.iconContainer:hover {
+    background-color: lightgray;
+    cursor: pointer;
 }

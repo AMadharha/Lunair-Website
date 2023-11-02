@@ -15,8 +15,12 @@ const Nav = () => {
                     <a>Contact Us</a>
                 </div>
                 <div className={styles.icons}>
-                    <img src={userIcon} alt="User Icon" className={styles.userIcon} />
-                    <img src={cartIcon} alt="Shopping Cart Icon" className={styles.cartIcon} />
+                    <div className={styles.iconContainer}>
+                        <img src={userIcon} alt="User Icon" className={styles.userIcon} />
+                    </div>
+                    <div className={styles.iconContainer}>
+                        <img src={cartIcon} alt="Shopping Cart Icon" className={styles.cartIcon} />
+                    </div>
                 </div>
             </nav>
         </header>
