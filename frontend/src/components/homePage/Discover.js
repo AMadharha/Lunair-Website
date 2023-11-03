@@ -1,6 +1,6 @@
 import React from 'react'
-import './assets/css/global.css'
-import styles from './assets/css/Discover.module.css'
+import '../assets/css/global.css'
+import styles from '../assets/css/Discover.module.css'
 
 const Discover = () => {
     return (

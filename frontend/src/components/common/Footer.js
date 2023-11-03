@@ -1,10 +1,10 @@
 import React, { useState } from 'react'
-import './assets/css/global.css'
-import styles from './assets/css/Footer.module.css'
-import instagram from './assets/images/instagram.png'
-import tiktok from './assets/images/tiktok.png'
-import instagramHover from './assets/images/instagram-hover.png'
-import tiktokHover from './assets/images/tiktok-hover.png'
+import '../assets/css/global.css'
+import styles from '../assets/css/Footer.module.css'
+import instagram from '../assets/images/instagram.png'
+import tiktok from '../assets/images/tiktok.png'
+import instagramHover from '../assets/images/instagram-hover.png'
+import tiktokHover from '../assets/images/tiktok-hover.png'
 
 const Footer = () => {
     const [isInstagramHovered, setInstagramHovered] = useState(false);
