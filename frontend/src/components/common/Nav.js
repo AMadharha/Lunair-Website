@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom';
 import '../assets/css/global.css'
 import styles from '../assets/css/Nav.module.css'
 import logo from '../assets/images/lunair-logo.svg'
@@ -9,10 +10,12 @@ const Nav = () => {
     return (
         <header>
             <nav>
-                <img src={logo} alt="Lunair Logo" className={styles.logo} />
+                <Link to="/">
+                    <img src={logo} alt="Lunair Logo" className={styles.logo} />
+                </Link>
                 <div className={styles.links}>
-                    <a>Shop</a>
-                    <a>Contact Us</a>
+                    <Link to="/shop">Shop</Link>
+                    <Link to="/contact">Contact Us</Link>
                 </div>
                 <div className={styles.icons}>
                     <div className={styles.iconContainer}>
