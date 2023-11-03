@@ -45,6 +45,10 @@
     gap: 30px;
 }
 
+.socialMedia a {
+    cursor: default;
+}
+
 .socialIcon {
     width: 48px;
     height: 48px;

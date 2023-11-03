@@ -29,13 +29,15 @@ const Footer = () => {
                             onMouseLeave={() => setInstagramHovered(false)}
                         />
                     </a>
-                    <img
-                        src={isTikTokHovered ? tiktokHover : tiktok}
-                        alt="TikTok Logo"
-                        className={styles.socialIcon}
-                        onMouseEnter={() => setTikTokHovered(true)}
-                        onMouseLeave={() => setTikTokHovered(false)}
-                    />
+                    <a href="https://www.instagram.com/lunair.co/" target="_blank">
+                        <img
+                            src={isTikTokHovered ? tiktokHover : tiktok}
+                            alt="TikTok Logo"
+                            className={styles.socialIcon}
+                            onMouseEnter={() => setTikTokHovered(true)}
+                            onMouseLeave={() => setTikTokHovered(false)}
+                        />
+                    </a>
                 </div>
             </div>
         </div>
