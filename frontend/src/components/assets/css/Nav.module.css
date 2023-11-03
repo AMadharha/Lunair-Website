@@ -14,10 +14,12 @@ nav {
 
 .logoContainer {
     display: flex;
-    align-items: center;
-    justify-content: center;
     width: 15%; 
     margin-right: 30px;
+}
+
+.iconContainer {
+    display: flex;
 }
   
 .logo {
@@ -26,7 +28,7 @@ nav {
     height: auto;
 }
 
-.page {
+.links a {
     text-decoration: none;
     font-family: 'Montserrat', sans-serif;
     font-weight: 400;
@@ -59,7 +61,7 @@ nav {
     height: 30px;
 }
 
-.iconContainer {
+.outerIconContainer {
     display: inline-flex;
     align-items: center;
     justify-content: center;
@@ -70,7 +72,7 @@ nav {
     transition: background-color 0.3s; /* Add a smooth transition */
 }
 
-.iconContainer:hover {
+.outerIconContainer:hover {
     background-color: lightgray;
     cursor: pointer;
 }

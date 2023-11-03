@@ -30,11 +30,35 @@
 }
 
 .link {
+    margin-left: 1px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-style: normal;
     font-size: 14px;
     color: #E4E4E4;
+    text-decoration: none;
 }
 
 .link:hover {
+    color: white;
+    cursor: pointer;
+}
+
+.linkButton {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 14px;
+    display: flex;
+    color: #E4E4E4;
+    background-color: transparent;
+    margin: 0;
+    padding: 0;
+    border: none;
+    text-decoration: none;
+}
+
+.linkButton:hover {
     color: white;
     cursor: pointer;
 }

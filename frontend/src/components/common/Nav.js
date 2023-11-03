@@ -14,15 +14,19 @@ const Nav = () => {
                     <img src={logo} alt="Lunair Logo" className={styles.logo} />
                 </Link>
                 <div className={styles.links}>
-                    <Link to="/shop" className={styles.page}>Shop</Link>
-                    <Link to="/contact" className={styles.page}>Contact Us</Link>
+                    <Link to="/shop">Shop</Link>
+                    <Link to="/contact">Contact Us</Link>
                 </div>
                 <div className={styles.icons}>
-                    <div className={styles.iconContainer}>
-                        <img src={userIcon} alt="User Icon" className={styles.userIcon} />
+                    <div className={styles.outerIconContainer}>
+                        <Link to="/account" className={styles.iconContainer}>
+                            <img src={userIcon} alt="User Icon" className={styles.userIcon} />
+                        </Link>
                     </div>
-                    <div className={styles.iconContainer}>
-                        <img src={cartIcon} alt="Shopping Cart Icon" className={styles.cartIcon} />
+                    <div className={styles.outerIconContainer}>
+                        <Link to="/cart" className={styles.iconContainer}>
+                            <img src={cartIcon} alt="Shopping Cart Icon" className={styles.cartIcon} />
+                        </Link>
                     </div>
                 </div>
             </nav>
