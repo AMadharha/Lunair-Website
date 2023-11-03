@@ -21,6 +21,7 @@ nav {
     align-self: flex-end;
     display: flex;
     gap: 30px;
+    cursor: default;
 }
 
 .links a:hover {
