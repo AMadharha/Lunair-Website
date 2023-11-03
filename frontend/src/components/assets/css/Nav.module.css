@@ -12,15 +12,41 @@ nav {
     display: flex;
 }
 
+.logoContainer {
+    display: flex;
+    width: 15%; 
+    margin-right: 30px;
+}
+
+.iconContainer {
+    display: flex;
+}
+  
 .logo {
-    width: 15%;
-    padding-right: 30px;
+    max-width: 100%; 
+    max-height: 100%; 
+    height: auto;
+}
+
+.links a {
+    text-decoration: none;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 24px;
+    color: #000;
 }
 
 .links {
     align-self: flex-end;
     display: flex;
     gap: 30px;
+    cursor: default;
+}
+
+.links a:hover {
+    color: gray;
+    cursor: pointer;
 }
 
 .icons {
@@ -33,4 +59,20 @@ nav {
 .userIcon, .cartIcon {
     width: 30px;
     height: 30px;
+}
+
+.outerIconContainer {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    width: 30px; /* Set the same width and height as the icons */
+    height: 30px;
+    padding: 10%;
+    transition: background-color 0.3s; /* Add a smooth transition */
+}
+
+.outerIconContainer:hover {
+    background-color: lightgray;
+    cursor: pointer;
 }

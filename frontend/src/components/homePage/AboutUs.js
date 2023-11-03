@@ -1,6 +1,6 @@
 import React from 'react'
-import './assets/css/global.css'
-import styles from './assets/css/AboutUs.module.css'
+import '../assets/css/global.css'
+import styles from '../assets/css/AboutUs.module.css'
 
 const AboutUs = () => {
     return (

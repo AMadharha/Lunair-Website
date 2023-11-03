@@ -28,3 +28,8 @@
     border: none;
     border-radius: 10px;
 }
+
+.shopButton:hover {
+    background-color: #8c7ec5;
+    cursor: pointer;
+}

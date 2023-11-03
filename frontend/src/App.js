@@ -1,24 +1,29 @@
-import './App.css'
-import Nav from './components/Nav.js'
-import Image from './components/Image.js'
-import Discover from './components/Discover.js'
-import Featured from './components/Featured.js'
-import AboutUs from './components/AboutUs.js'
-import Shipping from './components/Shipping.js'
-import Footer from './components/Footer.js'
+import React from 'react';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import Shop from './components/shop/Shop'
+import ContactUs from './components/contactUs/ContactUs'
+import Account from './components/account/Account'
+import Cart from './components/cart/Cart'
+import Nav from './components/common/Nav';
+import Footer from './components/common/Footer';
+import HomePage from './components/homePage/HomePage';
 
 function App() {
     return (
-        <div>
+        <Router>
             <Nav />
-            <Image />
-            <Discover />
-            <Featured />
-            <AboutUs />
-            <Shipping />
+            <div>
+                <Routes>
+                    <Route path="/" element={<HomePage />} />
+                    <Route path="/shop" element={<Shop />} />
+                    <Route path="/contact" element={<ContactUs />} />
+                    <Route path="/account" element={<Account />} />
+                    <Route path="/cart" element={<Cart />} />
+                </Routes>
+            </div>
             <Footer />
-        </div>
-    )
+        </Router>
+    );
 }
 
 export default App;

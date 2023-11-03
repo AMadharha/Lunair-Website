@@ -1,11 +1,11 @@
 import React, { useState } from 'react';
-import './assets/css/global.css';
-import styles from './assets/css/Featured.module.css';
-import arrowLeft from './assets/images/arrow-left.png';
-import arrowRight from './assets/images/arrow-right.png';
-import hoodie1 from './assets/images/gojo-white.png';
-import hoodie2 from './assets/images/levi-white.png';
-import hoodie3 from './assets/images/sasuke-black.png';
+import '../assets/css/global.css';
+import styles from '../assets/css/Featured.module.css';
+import arrowLeft from '../assets/images/arrow-left.png';
+import arrowRight from '../assets/images/arrow-right.png';
+import hoodie1 from '../assets/images/gojo-white.png';
+import hoodie2 from '../assets/images/levi-white.png';
+import hoodie3 from '../assets/images/sasuke-black.png';
 
 const Featured = () => {
     const [transitioning, setTransitioning] = useState(false);
