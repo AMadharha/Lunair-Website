@@ -12,9 +12,27 @@ nav {
     display: flex;
 }
 
+.logoContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 15%; 
+    margin-right: 30px;
+}
+  
 .logo {
-    width: 40%;
-    padding-right: 30px;
+    max-width: 100%; 
+    max-height: 100%; 
+    height: auto;
+}
+
+.page {
+    text-decoration: none;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 24px;
+    color: #000;
 }
 
 .links {

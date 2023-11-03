@@ -10,12 +10,12 @@ const Nav = () => {
     return (
         <header>
             <nav>
-                <Link to="/">
+                <Link to="/" className={styles.logoContainer}>
                     <img src={logo} alt="Lunair Logo" className={styles.logo} />
                 </Link>
                 <div className={styles.links}>
-                    <Link to="/shop">Shop</Link>
-                    <Link to="/contact">Contact Us</Link>
+                    <Link to="/shop" className={styles.page}>Shop</Link>
+                    <Link to="/contact" className={styles.page}>Contact Us</Link>
                 </div>
                 <div className={styles.icons}>
                     <div className={styles.iconContainer}>
