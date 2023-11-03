@@ -1,5 +1,5 @@
 import React from 'react'
-import { Link } from 'react-router-dom';
+import { Link } from 'react-router-dom'
 import '../assets/css/global.css'
 import styles from '../assets/css/Nav.module.css'
 import logo from '../assets/images/lunair-logo.svg'
