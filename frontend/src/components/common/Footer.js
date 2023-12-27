@@ -36,32 +36,34 @@ const Footer = () => {
 
     return (
         <div className={styles.container}>
-            <div className={styles.footerContent}>
-                <div className={styles.quickLinks}>
-                    <h1 className={styles.header}>Quick Links</h1>
-                    <button className={styles.linkButton} onClick={scrollToTop}>Back to Top</button>
-                    <Link to="/shop" className={styles.link}>Shop</Link>
-                    <Link to="/contact" className={styles.link}>Contact Us</Link>
-                </div>
-                <div className={styles.socialMedia}>
-                    <a href="https://www.instagram.com/lunair.co/" target="_blank" rel="noreferrer">
-                        <img
-                            src={isInstagramHovered ? instagramHover : instagram}
-                            alt="Instagram Logo"
-                            className={styles.socialIcon}
-                            onMouseEnter={() => setInstagramHovered(true)}
-                            onMouseLeave={() => setInstagramHovered(false)}
-                        />
-                    </a>
-                    <a href="https://www.tiktok.com/@lunairco/" target="_blank" rel="noreferrer">
-                        <img
-                            src={isTikTokHovered ? tiktokHover : tiktok}
-                            alt="TikTok Logo"
-                            className={styles.socialIcon}
-                            onMouseEnter={() => setTikTokHovered(true)}
-                            onMouseLeave={() => setTikTokHovered(false)}
-                        />
-                    </a>
+            <div className={styles.footer}>
+                <div className={styles.footerContent}>
+                    <div className={styles.quickLinks}>
+                        <h1 className={styles.header}>Quick Links</h1>
+                        <button className={styles.linkButton} onClick={scrollToTop}>Back to Top</button>
+                        <Link to="/shop" className={styles.link}>Shop</Link>
+                        <Link to="/contact" className={styles.link}>Contact Us</Link>
+                    </div>
+                    <div className={styles.socialMedia}>
+                        <a href="https://www.instagram.com/lunair.co/" target="_blank" rel="noreferrer">
+                            <img
+                                src={isInstagramHovered ? instagramHover : instagram}
+                                alt="Instagram Logo"
+                                className={styles.socialIcon}
+                                onMouseEnter={() => setInstagramHovered(true)}
+                                onMouseLeave={() => setInstagramHovered(false)}
+                            />
+                        </a>
+                        <a href="https://www.tiktok.com/@lunairco/" target="_blank" rel="noreferrer">
+                            <img
+                                src={isTikTokHovered ? tiktokHover : tiktok}
+                                alt="TikTok Logo"
+                                className={styles.socialIcon}
+                                onMouseEnter={() => setTikTokHovered(true)}
+                                onMouseLeave={() => setTikTokHovered(false)}
+                            />
+                        </a>
+                    </div>
                 </div>
             </div>
         </div>
