@@ -2,6 +2,7 @@
 
 body {
     overflow-y: scroll;
+    background-color: #F0F0F0;
 }
 
 h1 {
@@ -29,4 +30,16 @@ p {
     font-size: 20px;
     color: #000000;
     margin: 0px;
+}
+
+input {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    background-color: #F0F0F0;
+}
+
+textarea {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    background-color: #F0F0F0;
 }
