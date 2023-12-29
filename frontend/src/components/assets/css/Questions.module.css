@@ -6,10 +6,15 @@
 
 .questionComponent {
     display: flex;
-    justify-content: left;
+    flex-direction: column;
+}
+
+.questionText {
+    text-align:  left;
 }
 
 #header {
+    display: flex;
     justify-content: center;
     padding-top: 18px;
     padding-bottom: 22px;
@@ -26,6 +31,16 @@
     border-radius: 12px;
 }
 
+.questionComponent {
+    margin-left: 450px;
+    margin-right: 450px;
+}
+
 h2 {
     font-size: 30px;
+}
+
+hr {
+    width: 1000px;
+    border: 2px solid #AEC2DC;
 }
