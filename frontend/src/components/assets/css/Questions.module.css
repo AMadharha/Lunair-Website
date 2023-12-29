@@ -1,7 +1,6 @@
 .questionsContainer {
     display: flex;
     flex-direction: column;
-    font-weight: bold;
 }
 
 .questionComponent {
@@ -13,13 +12,27 @@
     text-align:  left;
 }
 
+.answerText {
+    text-align: left;
+    font-size: 22px;
+}
+
+.plusButton {
+    float: right;
+    cursor: pointer;
+    border: none;
+    font-size: 25px;
+    padding: 0px;
+    margin: 0px;
+}
+
 #header {
     display: flex;
     justify-content: center;
     padding-top: 18px;
     padding-bottom: 22px;
     margin-top: 30px;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
     background-color: #F1E0CD;
     height: 40px;
 }
