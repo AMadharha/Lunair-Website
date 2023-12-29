@@ -1,0 +1,36 @@
+input, textarea {
+    width: 750px;
+    padding: 30px;
+    border: 2px solid #5C5C5C; /* Apply purple border to textarea */
+    border-radius: 35px; /* Adjust the border-radius for rounded corners */
+    box-sizing: border-box;
+    resize: vertical; /* Allow vertical resizing of textarea */
+}
+
+.submit {
+    padding: 17px;
+    height: 70px;
+    border: none;
+    background-color: #A79FC8;
+    color: #FFFFFF;
+}
+
+.email {
+    height: 70px;
+}
+
+.name {
+    height: 70px;
+}
+
+.message {
+    height: 250px;
+}
+
+.form {
+    text-align: center;
+}
+
+.formComponent {
+    margin: 10px;
+}
