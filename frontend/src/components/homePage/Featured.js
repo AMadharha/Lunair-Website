@@ -34,7 +34,7 @@ const Featured = () => {
     ];
 
     const nextHoodie = () => {
-        setDirection("right");
+        setDirection("left");
         setTransitioning(true);
         setTimeout(() => {
             setCurrentHoodie((prevHoodie) => (prevHoodie + 1) % hoodies.length);
@@ -43,7 +43,7 @@ const Featured = () => {
     }
     
     const prevHoodie = () => {
-        setDirection("left");
+        setDirection("right");
         setTransitioning(true);
         setTimeout(() => {
             setCurrentHoodie((prevHoodie) => (prevHoodie - 1 + hoodies.length) % hoodies.length);
@@ -57,7 +57,7 @@ const Featured = () => {
             <div className={styles.hoodieDisplay}>
                 <img src={arrowLeft} alt="Left Arrow" className={styles.arrow} onClick={prevHoodie} />
 
-                <div className={`${styles.contentContainer} ${transitioning ? (direction === "left" ? styles.leaving : styles.entering) : ''}`}>
+                <div className={`${styles.contentContainer} ${transitioning ? (direction === "right" ? styles.leaving : styles.entering) : ''}`}>
                     <img src={hoodies[currentHoodie].image} alt="Hoodie" className={styles.hoodie} />
                     <div className={styles.details}>
                         <h2>{hoodies[currentHoodie].name}</h2>
