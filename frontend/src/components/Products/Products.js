@@ -11,6 +11,12 @@ const Products = ({ productItems }) => {
   };
 
   return (
+    <div className="container">
+       
+    <div className="filter">
+      
+    </div>
+
     <div className="products">
       {productItems.map((productItem, index) => (
         <div className="card" key={productItem.id || index}>
@@ -50,6 +56,7 @@ const Products = ({ productItems }) => {
           </div>
         </div>
       ))}
+    </div>
     </div>
   );
 };
