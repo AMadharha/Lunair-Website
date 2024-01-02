@@ -1,6 +1,6 @@
 import React from 'react';
 import styles from '../assets/css/Form.module.css'
-import '../assets/css/global.css';
+import '../assets/css/global.css'
 import '../assets/css/Form.module.css'
 
 

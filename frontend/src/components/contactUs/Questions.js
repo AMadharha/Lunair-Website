@@ -1,7 +1,7 @@
-import React, { useState } from 'react';
-import styles from '../assets/css/Questions.module.css';
-import '../assets/css/global.css';
-import '../assets/css/Questions.module.css';
+import React, { useState } from 'react'
+import styles from '../assets/css/Questions.module.css'
+import '../assets/css/global.css'
+import '../assets/css/Questions.module.css'
 
 const Questions = () => {
     const [expandedQuestions, setExpandedQuestions] = useState(Array(6).fill(false));

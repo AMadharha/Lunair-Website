@@ -1,12 +1,12 @@
-import React from 'react';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import React from 'react'
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 import Shop from './components/shop/Shop'
 import ContactUs from './components/contactUs/ContactUs'
 import Account from './components/account/Account'
 import Cart from './components/cart/Cart'
-import Nav from './components/common/Nav';
-import Footer from './components/common/Footer';
-import HomePage from './components/homePage/HomePage';
+import Nav from './components/common/Nav'
+import Footer from './components/common/Footer'
+import HomePage from './components/homePage/HomePage'
 
 function App() {
     return (
