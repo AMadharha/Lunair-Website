@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import "./Products.css";
+import "../assets/css/Products.css";
 
 const Products = ({ productItems }) => {
   const [selectedColors, setSelectedColors] = useState({});
@@ -14,7 +14,7 @@ const Products = ({ productItems }) => {
     <div className="container">
        
     <div className="filter">
-      
+
     </div>
 
     <div className="products">
