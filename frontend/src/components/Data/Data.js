@@ -1,22 +1,26 @@
+import gojoHoodie from '../assets/images/gojo-white.png'
+import leviHoodie from '../assets/images/levi-white.png'
+import sasukeHoodie from '../assets/images/sasuke-black.png'
+
 const data = {
   productItems: [
     {
       id: "1",
       name: "Sasuke",
       price: 60,
-      image: "./pics/sasuke-black.jpg",
+      image: sasukeHoodie,
     },
     {
       id: "2",
       name: "Gojo",
       price: 60,
-      image: "./pics/gojo-white.jpg",
+      image: gojoHoodie,
     },
     {
       id: "3",
       name: "Levi",
       price: 60,
-      image: "./pics/levi-white.jpg",
+      image: leviHoodie,
     },
   ],
 };
