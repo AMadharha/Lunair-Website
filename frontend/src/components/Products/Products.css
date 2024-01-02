@@ -1,0 +1,76 @@
+.products{
+    margin: 20px auto;
+    width: 80%;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    border-radius: 5px;
+}
+
+.info{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px 0;
+
+}
+
+.card{
+    width: 300px;
+    height: 500px;
+    border-radius: 5px;
+    overflow: hidden;
+    padding: 10px;
+    margin: 40px 20px;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+}
+
+.card:hover{
+    position: relative; 
+    top: -10px;
+    transition: 2s;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+   
+}
+
+.product-image{
+    width: 100%;
+    max-width: 300px;
+    min-height: 300px;
+    display: block;
+    object-fit: cover;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+}
+
+.product-price{
+    margin: 10px 0;
+}
+
+.cartBtn{
+    padding: 10px;
+    margin: 10px;
+    border-radius: 5px;
+    text-decoration: none;
+    border-color: aliceblue;
+}
+
+.color-selector {
+    margin-top: 10px; /* Adjust as needed */
+  }
+  
+  .color-circle {
+    display: inline-block;
+    width: 20px; /* Size of the circle */
+    height: 20px; /* Size of the circle */
+    border-radius: 50%; /* Makes it round */
+    margin-right: 5px;
+    cursor: pointer; /* Changes the mouse cursor on hover */
+    border: 1px solid transparent; /* Adjust the border as needed */
+  }
+  
+  .color-circle:hover {
+    border-color: black; /* Change on hover to indicate selectable */
+  }
