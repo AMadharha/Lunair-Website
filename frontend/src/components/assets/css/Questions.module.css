@@ -1,6 +1,7 @@
 .questionsContainer {
     display: flex;
     flex-direction: column;
+    margin-bottom: 45px;
 }
 
 .questionComponent {
@@ -9,7 +10,7 @@
 }
 
 .questionText {
-    text-align:  left;
+    text-align: left;
 }
 
 .answerText {
